@@ -1,0 +1,10 @@
+# ===== Python build & cache files =====
+__pycache__/
+*.py[cod]
+
+# ===== Virtual environment =====
+.venv/
+
+# ===== Editor folders (VS Code, PyCharm) =====
+.vscode/
+.idea/
