@@ -43,13 +43,19 @@ pip install -r requirements.txt   # optional helper file
 # 3 – run the listener
 python sarracenia_eccc_feed_listener.py
 Connected to subscriber and listening for messages!
-Got a new message!
-Message content:
- {
-   "url": "https://hpfx.collab.science.gc.ca/.../HRDPA/20250509/...grib2",
-   "size": 15432109,
-   "md5": "...",
-   ...
+2025-05-09 16:16:59,283 [DEBUG] amqp _on_start Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@hpfx2.collab.science.gc.ca', 'copyright': 'Copyright (c) 2007-2022 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 24.2.1', 'product': 'RabbitMQ', 'version': '3.9.27'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2025-05-09 16:16:59,353 [DEBUG] amqp __init__ using channel_id: 1
+2025-05-09 16:16:59,389 [DEBUG] amqp _on_open_ok Channel open    
+2025-05-09 16:16:59,390 [DEBUG] amqp __init__ using channel_id: 2
+2025-05-09 16:16:59,423 [DEBUG] amqp _on_open_ok Channel open
+2025-05-09 16:16:59,504 [INFO] sarracenia.moth.amqp _queueDeclare queue declared q_anonymousDESKTOP-VA5LJNQ_453456354_kkk (as: amqps://anonymous@hpfx.collab.science.gc.ca), (messages waiting: 0)
+2025-05-09 16:16:59,504 [INFO] sarracenia.moth.amqp getSetup binding q_anonymousDESKTOP-VA5LJNQ_453456354_kkk with v02.post.*.WXO-DD.model_hrdpa.2.5km.#.grib2 to xpublic (as: amqps://anonymous@hpfx.collab.science.gc.ca)2025-05-09 16:16:59,543 [INFO] sarracenia.moth.amqp getSetup binding q_anonymousDESKTOP-VA5LJNQ_453456354_kkk with v02.post.*.WXO-DD.model_hrdps.continental.2.5km.#.grib2 to xpublic (as: amqps://anonymous@hpfx.collab.science.gc.ca)
+2025-05-09 16:16:59,580 [INFO] sarracenia.moth.amqp getSetup binding q_anonymousDESKTOP-VA5LJNQ_453456354_kkk with v02.post.*.WXO-DD.model_gem_regional.10km.grib2.#.grib2 to xpublic (as: amqps://anonymous@hpfx.collab.science.gc.ca)
+2025-05-09 16:16:59,617 [INFO] sarracenia.moth.amqp getSetup binding q_anonymousDESKTOP-VA5LJNQ_453456354_kkk with v02.post.*.WXO-DD.model_gem_global.15km.grib2.lat_lon.#.grib2 to xpublic (as: amqps://anonymous@hpfx.collab.science.gc.ca)
+2025-05-09 16:16:59,654 [INFO] sarracenia.moth.amqp getSetup binding q_anonymousDESKTOP-VA5LJNQ_453456354_kkk with v02.post.*.WXO-DD.ensemble.geps.grib2.raw.#.grib2 to xpublic (as: amqps://anonymous@hpfx.collab.science.gc.ca)
+2025-05-09 16:16:59,692 [INFO] sarracenia.moth.amqp getSetup binding q_anonymousDESKTOP-VA5LJNQ_453456354_kkk with v02.post.*.WXO-DD.ensemble.reps.10km.grib2.#.grib2 to xpublic (as: amqps://anonymous@hpfx.collab.science.gc.ca)
+2025-05-09 16:16:59,729 [DEBUG] sarracenia.moth.amqp getSetup getSetup ... Done!
+.....
  }</code></pre>
   <p>Press <strong>Ctrl +C</strong> to stop the listener gracefully.</p>
 
