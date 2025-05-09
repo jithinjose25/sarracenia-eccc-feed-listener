@@ -42,6 +42,7 @@ pip install -r requirements.txt   # optional helper file
 
 # 3 – run the listener
 python sarracenia_eccc_feed_listener.py
+
 Connected to subscriber and listening for messages!
 2025-05-09 16:16:59,283 [DEBUG] amqp _on_start Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@hpfx2.collab.science.gc.ca', 'copyright': 'Copyright (c) 2007-2022 VMware, Inc. or its affiliates.', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 24.2.1', 'product': 'RabbitMQ', 'version': '3.9.27'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
 2025-05-09 16:16:59,353 [DEBUG] amqp __init__ using channel_id: 1
